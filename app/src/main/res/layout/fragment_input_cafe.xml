@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_margin="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Cafe"
+                android:textSize="25dp"
+                android:fontFamily="@font/nunito_bold"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/iv_cafe_add"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+            <LinearLayout
+                android:id="@+id/layout_btn_add_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/border_white"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_camera_alt_black_24dp"
+                    android:tint="#848484"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambahkan Gambar"
+                    android:fontFamily="@font/nunito_semi_bold"/>
+            </LinearLayout>
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_ganti_gambar"
+                android:background="@drawable/bg_button_tambah_keranjang"
+                android:text="Ganti gambar"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/layout_btn_add_image"
+                android:layout_margin="16dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Nama Cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_nama_cafe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="15dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_alamat_cafe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="15dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="No. Telp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_no_telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_simpan"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Tambahkan"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+                android:background="@drawable/bg_btn_blue"/>
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Update"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4CAF50"
+                android:background="@drawable/bg_btn_blue"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

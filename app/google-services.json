@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "715242439893",
+    "firebase_url": "https://nicepos-f6b68.firebaseio.com",
+    "project_id": "nicepos-f6b68",
+    "storage_bucket": "nicepos-f6b68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715242439893:android:bf9d306fbf27688d2b4e5c",
+        "android_client_info": {
+          "package_name": "id.co.myproject.nicepos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715242439893-gq881hlbi8pg18de63lotfs8oso6jvl9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.co.myproject.nicepos",
+            "certificate_hash": "aa42bdd86626a359918e2fced12ade05269892bf"
+          }
+        },
+        {
+          "client_id": "715242439893-hlupmk6kjba4ood4pkb34tj74p9n1u54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnRdwf316qIR_W-xulVGzow8QXt7WAFZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715242439893-hlupmk6kjba4ood4pkb34tj74p9n1u54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

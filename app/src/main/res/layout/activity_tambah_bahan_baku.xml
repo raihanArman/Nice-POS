@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.admin.home.menu.menu.TambahBahanBakuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootLayout"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+        <LinearLayout
+            android:id="@+id/lv_empty"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_empty_cart" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak ada pesanan"
+                android:textSize="30sp"
+                android:fontFamily="@font/nunito"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah bahan"/>
+            <Spinner
+                android:id="@+id/sp_stok"
+                android:padding="8dp"
+                android:hint="Pilih bahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Takaran"/>
+            <EditText
+                android:id="@+id/et_takaran"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="15dp"/>
+            <TextView
+                android:id="@+id/tv_tambah_bahan"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Tambah"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:background="@drawable/bg_btn_blue"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lv_bahan">
+            </ListView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btn_selesai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4CAF50"
+                    android:text="Selesai"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

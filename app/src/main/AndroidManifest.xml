@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.co.myproject.nicepos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+        <activity android:name=".view.admin.home.menu.menu.TambahBahanBakuActivity"></activity>
+        <activity android:name=".view.admin.home.menu.market.DetailBarangActivity" />
+        <activity
+            android:name=".view.kasir.KasirHomeActivity"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".view.admin.home.menu.kasir.TambahKasirActivity" />
+        <activity android:name=".view.admin.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.admin.home.menu.kategori.TambahKategoriActivity" />
+        <activity android:name=".view.admin.home.menu.menu.TambahMenuActivity" />
+        <activity android:name=".view.admin.MainActivity" />
+    </application>
+
+</manifest>

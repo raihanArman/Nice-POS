@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="8dp"
+    android:background="@android:color/black">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fm_1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_transparent"
+                android:alpha="0.6"/>
+        </FrameLayout>
+        <TextView
+            android:layout_below="@id/fm_1"
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/nunito_bold"/>
+        <TextView
+            android:layout_below="@id/tv_menu"
+            android:id="@+id/tv_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 120.000"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/nunito"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

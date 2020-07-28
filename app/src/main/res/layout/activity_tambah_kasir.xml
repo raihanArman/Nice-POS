@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_menu_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ToolbarColoredBackArrow">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_username_kasir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="15dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Nama Kasir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_nama_kasir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="15dp"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="15dp"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:id="@+id/tv_simpan"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Simpan"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+                android:background="@drawable/bg_btn_blue"/>
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Update"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4CAF50"
+                android:background="@drawable/bg_btn_blue"/>
+            <TextView
+                android:id="@+id/tv_hapus"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Hapus"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#BE0101"
+                android:background="@drawable/bg_btn_blue"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

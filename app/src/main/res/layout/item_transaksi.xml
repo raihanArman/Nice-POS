@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="Delete"
+            android:textColor="@color/red_main"
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="14 November 2019" />
+
+            <TextView
+                android:id="@+id/tv_total_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:text="Total Harga" />
+
+            <TextView
+                android:id="@+id/tv_total_bayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:text="Total Bayar"
+                android:textAllCaps="true"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/tv_kembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:text="Uang Kembali" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

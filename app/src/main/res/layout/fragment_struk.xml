@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.kasir.home.StrukFragment"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+    <TextView
+        android:id="@+id/tv_cafe"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafedia"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14 November 2016"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/tv_kasir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kasir 1"
+        android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:layout_below="@id/tv_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <com.app.feng.fixtablelayout.FixTableLayout
+            android:id="@+id/tb_menu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:fixtable_divider_height="16dp"
+            app:fixtable_column_1_color="@android:color/white"
+            app:fixtable_column_2_color="@android:color/white"
+            app:fixtable_divider_color="@android:color/white"
+            app:fixtable_title_color="@android:color/white"
+            app:fixtable_item_gravity="CENTER"
+            app:fixtable_item_top_bottom_padding="8dp"
+            app:fixtable_item_width="100dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Total : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_total"
+            android:text="20000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Bayar : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_bayar"
+            android:text="20000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Kembalian : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_kembalian"
+            android:text="20000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_red"
+        android:backgroundTint="@color/second"
+        android:text="Kembali"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nunito"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

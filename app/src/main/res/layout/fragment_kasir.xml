@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kasir"
+            android:textSize="25dp"
+            android:fontFamily="@font/nunito_bold"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_cari"
+        android:layout_below="@id/lv_1"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_input"
+        android:drawableRight="@drawable/ic_search_black_24dp"
+        android:drawableTint="@color/colorAccent"
+        android:ems="10"
+        android:hint="Cari"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textSize="12sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_kasir"
+        android:layout_below="@id/et_cari"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_empty" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data kosong"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunito"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/white"/>
+
+</RelativeLayout>

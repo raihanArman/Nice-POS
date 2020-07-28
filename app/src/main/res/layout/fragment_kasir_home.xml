@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.kasir.home.KasirHomeFragment"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:id="@+id/lv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:visibility="gone"
+                android:id="@+id/iv_cafe"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/bg_horizontal"/>
+            <TextView
+                android:id="@+id/tv_kasir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Kasir"
+                android:textColor="@color/second"
+                android:fontFamily="@font/nunito"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_empty"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_empty" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data kosong"
+                android:textSize="30sp"
+                android:fontFamily="@font/nunito"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_below="@id/lv_1"
+            android:id="@+id/et_cari"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_input"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+            android:drawableTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Cari"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textSize="12sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_kasir_menu"
+            android:layout_below="@id/et_cari"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/fb_transaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_add_shopping_cart_black_24dp"
+        android:tint="@android:color/white"
+        />
+
+</RelativeLayout>

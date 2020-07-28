@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.admin.home.menu.menu.TambahMenuActivity"
+    android:isScrollContainer="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_menu_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ToolbarColoredBackArrow">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ImageView
+                android:id="@+id/iv_kategori"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+            <LinearLayout
+                android:id="@+id/layout_btn_add_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#e7e7e7"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_camera_alt_black_24dp"
+                    android:tint="#848484"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambahkan Gambar"
+                    android:fontFamily="@font/nunito_semi_bold"/>
+            </LinearLayout>
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_ganti_gambar"
+                android:background="@drawable/bg_button_tambah_keranjang"
+                android:text="Ganti gambar"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/layout_btn_add_image"
+                android:layout_margin="16dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Nama Kategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_nama_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_simpan"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Simpan"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+                android:background="@drawable/bg_btn_blue"/>
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Update"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4CAF50"
+                android:background="@drawable/bg_btn_blue"/>
+            <TextView
+                android:id="@+id/tv_hapus"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Hapus"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#BE0101"
+                android:background="@drawable/bg_btn_blue"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

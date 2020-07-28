@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.admin.home.menu.kas.KasFragment">
+
+    <LinearLayout
+        android:id="@+id/lv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/tv_tanggal_hari_ini"
+                android:text="14 November 2019"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/nunito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pemasukan bulan ini : "
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:id="@+id/tv_pemasukan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 25.000.0000"
+                    android:textSize="15sp"
+                    android:textColor="@color/second"
+                    android:fontFamily="@font/nunito_bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengeluaran bulan ini : "
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/nunito_bold"/>
+                <TextView
+                    android:id="@+id/tv_pengeluaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 10.000.0000"
+                    android:textSize="15sp"
+                    android:textColor="@color/second"
+                    android:fontFamily="@font/nunito_bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/layout_kas"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/layout_view_pager"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

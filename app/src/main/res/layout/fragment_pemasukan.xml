@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/lv_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorRose"
+                android:padding="8dp"
+                android:layout_gravity="right"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/preview"
+                    android:tint="@android:color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preview"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nunito_bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/sp_filter"
+                android:padding="8dp"
+                android:hint="Pilih kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pemasukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/lv_filter"/>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/lv_cetak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito"
+                android:text="Data kosong"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
